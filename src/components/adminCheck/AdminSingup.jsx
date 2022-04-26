@@ -27,7 +27,7 @@ function AdminSingup() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('http://localhost:8080/ragister',userData)
+    axios.post('https://pacific-cliffs-58272.herokuapp.com/ragister',userData)
     .then(function (response) {
       console.log(response.data)
       if(response.data.message !== 'email alredy exist'){

@@ -51,7 +51,7 @@ export const AllPets = () =>{
 
 
     useEffect(()=>{
-        axios.get(`http://localhost:8080/addPet`).then((res)=>{
+        axios.get(`https://pacific-cliffs-58272.herokuapp.com/addPet`).then((res)=>{
             sete(res.data)
             console.log(res.data)
         }).catch((e)=>{console.log(e)})

@@ -50,7 +50,7 @@ export const MyPet = () =>{
 
 
     useEffect(()=>{
-        axios.get(`http://localhost:8080/myPet/${id}`).then((res)=>{
+        axios.get(`https://pacific-cliffs-58272.herokuapp.com/myPet/${id}`).then((res)=>{
             console.log(res.data)
             if(res.data.length>0){
                 sete(res.data)

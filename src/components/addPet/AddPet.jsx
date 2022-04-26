@@ -56,7 +56,7 @@ export const AddPet = () =>{
 
 
     function bear(){
-        axios.post('http://localhost:8080/addPet',obj,config).then((res)=>{
+        axios.post('https://pacific-cliffs-58272.herokuapp.com/addPet',obj,config).then((res)=>{
             console.log(res.data)
             alert('Submitted')
             

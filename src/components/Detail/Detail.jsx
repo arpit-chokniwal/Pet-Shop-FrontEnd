@@ -49,7 +49,7 @@ export const Detail = () =>{
     
     const [e,sete] = useState({})
     useEffect(()=>{
-        axios.get(`http://localhost:8080/data/${id}`).then((res)=>{
+        axios.get(`https://pacific-cliffs-58272.herokuapp.com/data/${id}`).then((res)=>{
             sete(res.data)
         }).catch((e)=>{console.log(e)})
     },[])
@@ -60,7 +60,7 @@ export const Detail = () =>{
         }
       },[])
   function del(){
-    axios.delete(`http://localhost:8080/data/${id}`).then((res)=>{
+    axios.delete(`https://pacific-cliffs-58272.herokuapp.com/data/${id}`).then((res)=>{
         navigate('/')
     }).catch((e)=>{
         alert(e)

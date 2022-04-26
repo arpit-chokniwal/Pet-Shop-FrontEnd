@@ -35,7 +35,7 @@ export const ShowForm = () =>{
     }
 
     function submit(){
-        axios.post('http://localhost:8080/data',obj).then((res)=>{
+        axios.post('https://pacific-cliffs-58272.herokuapp.com/data',obj).then((res)=>{
            alert('Submitted Succesfully')
             setObj({
                 Name:'',

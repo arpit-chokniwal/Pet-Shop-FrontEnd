@@ -48,7 +48,7 @@ export const Home = () =>{
 
 
     function get(){
-      axios.get('http://localhost:8080/data').then((res)=>{
+      axios.get('https://pacific-cliffs-58272.herokuapp.com/data').then((res)=>{
           dispatch(addData(res.data))
       })
     }
@@ -61,24 +61,24 @@ export const Home = () =>{
   }
   function sor(e){
     if(e === 'city'){
-      axios.get('http://localhost:8080/sort/City').then((res)=>{
+      axios.get('https://pacific-cliffs-58272.herokuapp.com/sort/City').then((res)=>{
         dispatch(addData(res.data))
     })
     }else if (e === 'cpd'){
-      axios.get('http://localhost:8080/sort/cpd').then((res)=>{
+      axios.get('https://pacific-cliffs-58272.herokuapp.com/sort/cpd').then((res)=>{
             dispatch(addData(res.data))
         })
       // dispatch(addData(a))
     }else if(e === 'rat'){
-      axios.get('http://localhost:8080/sort/Rating').then((res)=>{
+      axios.get('https://pacific-cliffs-58272.herokuapp.com/sort/Rating').then((res)=>{
             dispatch(addData(res.data))
         })
     }else if(e === 'var'){
-      axios.get('http://localhost:8080/sort/Verified').then((res)=>{
+      axios.get('https://pacific-cliffs-58272.herokuapp.com/sort/Verified').then((res)=>{
             dispatch(addData(res.data))
         })
     }else if(e === 'cap'){
-      axios.get('http://localhost:8080/sort/Capacity').then((res)=>{
+      axios.get('https://pacific-cliffs-58272.herokuapp.com/sort/Capacity').then((res)=>{
             dispatch(addData(res.data))
         })
     }else{

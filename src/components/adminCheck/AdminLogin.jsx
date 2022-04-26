@@ -28,7 +28,7 @@ function AdminLogin() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('http://localhost:8080/login',userData)
+    axios.post('https://pacific-cliffs-58272.herokuapp.com/login',userData)
     .then(function (response) {
       console.log(response.data)
       localStorage.setItem("token" , JSON.stringify(response.data.token))

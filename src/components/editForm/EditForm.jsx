@@ -43,7 +43,7 @@ export const EditForm = () =>{
                 data[key] = obj[key]
             }
         } 
-        axios.patch(`http://localhost:8080/data/${id}`,data).then((res)=>{
+        axios.patch(`https://pacific-cliffs-58272.herokuapp.com/data/${id}`,data).then((res)=>{
            alert('Edit Succesfully')
             setObj({
                 Name:'',
